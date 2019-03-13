@@ -156,7 +156,7 @@
 		<div class="menu-sec">
 			<div class="container">
 				<div class="logo">
-					<a href="{{url('/')}}" title=""><img class="hidesticky" src="https://trello-attachments.s3.amazonaws.com/5c5beabcda47348e8c7d43e0/5c8791d64b12f23707c78f3b/5fe6db9eda5cbaa5204f0d9cf1ad3bdd/logo.png" alt="" /></a>
+					<a href="{{url('/')}}" title=""><img class="hidesticky" src="https://trello-attachments.s3.amazonaws.com/5c5beabcda47348e8c7d43e0/5c8791d64b12f23707c78f3b/5fe6db9eda5cbaa5204f0d9cf1ad3bdd/logo.png" alt="" /> <img src="https://trello-attachments.s3.amazonaws.com/5c87963c959550695055d4b7/178x40/b9f4b04d62bfd9319575b0c13ddeb3f8/Untitled-2.png" class="showsticky"></a>
 				</div><!-- Logo -->
 				<div class="btn-extars">
 					<a href="#" title="" class="post-job-btn"><i class="la la-plus"></i>Posting Pekerjaan</a>
@@ -727,8 +727,8 @@
         <span class="close-popup"><i class="la la-close"></i></span>
         <h3>Masuk</h3>
         <div class="select-user" style="margin-bottom: 10%;">
-            <span value="3" >Pelanggan</span>
-            <span value="4" >Klien</span>
+            <span value="3" ><img src="https://image.flaticon.com/icons/svg/1459/1459116.svg" style="width: 30px;">&nbsp;&nbsp;&nbsp;Pelanggan</span>
+            <span value="4" ><img src="https://image.flaticon.com/icons/svg/912/912316.svg" style="width: 30px;">&nbsp;&nbsp;&nbsp;Klien</span>
         </div>
         <form>
             <div class="cfield">
@@ -760,8 +760,8 @@
         <span class="close-popup"><i class="la la-close"></i></span>
         <h3>Daftar</h3>
         <div class="select-user" style="margin-bottom: 10%;">
-            <span value="3" >Pelanggan</span>
-            <span value="4" >Klien</span>
+            <span value="3" ><img src="https://image.flaticon.com/icons/svg/1459/1459116.svg" style="width: 30px;">&nbsp;&nbsp;&nbsp;Pelanggan</span>
+            <span value="4" ><img src="https://image.flaticon.com/icons/svg/912/912316.svg" style="width: 30px;">&nbsp;&nbsp;&nbsp;Klien</span>
         </div>
         <div></div>
             <p style="font-size: 14px; float: left; margin: 1%;">Nama</p>
