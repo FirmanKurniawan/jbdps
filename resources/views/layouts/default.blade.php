@@ -723,80 +723,104 @@
 
 <div class="account-popup-area signin-popup-box">
 	<div class="account-popup">
-		<span class="close-popup"><i class="la la-close"></i></span>
-		<h3>User Login</h3>
-		<span>Click To Login With Demo User</span>
-		<div class="select-user">
-			<span>Candidate</span>
-			<span>Employer</span>
-		</div>
-		<form>
-			<div class="cfield">
-				<input type="text" placeholder="Username" />
-				<i class="la la-user"></i>
-			</div>
-			<div class="cfield">
-				<input type="password" placeholder="********" />
-				<i class="la la-key"></i>
-			</div>
-			<p class="remember-label">
-				<input type="checkbox" name="cb" id="cb1"><label for="cb1">Remember me</label>
-			</p>
-			<a href="#" title="">Forgot Password?</a>
-			<button type="submit">Login</button>
-		</form>
-		<div class="extra-login">
-			<span>Or</span>
-			<div class="login-social">
-				<a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
-				<a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
+		<form method="POST" action="#">
+        <span class="close-popup"><i class="la la-close"></i></span>
+        <h3>Masuk</h3>
+        <div class="select-user" style="margin-bottom: 10%;">
+            <span value="3" >Pelanggan</span>
+            <span value="4" >Klien</span>
+        </div>
+        <form>
+            <div class="cfield">
+                <input type="number" name="nik" placeholder="Nomor Induk Kependudukan" />
+                <i class="la la-user"></i>
+            </div>
+            <div class="cfield">
+                <input type="password" name="password" placeholder="********" />
+                <i class="la la-key"></i>
+            </div>
+            <a href="#" title="">Lupa Kata Sandi?</a>
+            <button type="submit">Masuk</button>
+        </form>
+        <div class="extra-login">
+            <span>atau masuk dengan</span>
+            <div class="login-social">
+            	<a class="google-login" href="#" title="google"><i class="fa fa-google"></i></a>
+                <a class="fb-login" href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+                <a class="tw-login" href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+        </form>
 	</div>
 </div><!-- LOGIN POPUP -->
 
 <div class="account-popup-area signup-popup-box">
 	<div class="account-popup">
-		<span class="close-popup"><i class="la la-close"></i></span>
-		<h3>Sign Up</h3>
-		<div class="select-user">
-			<span>Candidate</span>
-			<span>Employer</span>
-		</div>
-		<form>
-			<div class="cfield">
-				<input type="text" placeholder="Username" />
-				<i class="la la-user"></i>
-			</div>
-			<div class="cfield">
-				<input type="password" placeholder="********" />
-				<i class="la la-key"></i>
-			</div>
-			<div class="cfield">
-				<input type="text" placeholder="Email" />
-				<i class="la la-envelope-o"></i>
-			</div>
-			<div class="dropdown-field">
-				<select data-placeholder="Please Select Specialism" class="chosen">
-					<option>Web Development</option>
-					<option>Web Designing</option>
-					<option>Art & Culture</option>
-					<option>Reading & Writing</option>
-				</select>
-			</div>
-			<div class="cfield">
-				<input type="text" placeholder="Phone Number" />
-				<i class="la la-phone"></i>
-			</div>
-			<button type="submit">Signup</button>
-		</form>
-		<div class="extra-login">
-			<span>Or</span>
-			<div class="login-social">
-				<a class="fb-login" href="#" title=""><i class="fa fa-facebook"></i></a>
-				<a class="tw-login" href="#" title=""><i class="fa fa-twitter"></i></a>
-			</div>
-		</div>
+		<form method="POST" action="#">
+        <span class="close-popup"><i class="la la-close"></i></span>
+        <h3>Daftar</h3>
+        <div class="select-user" style="margin-bottom: 10%;">
+            <span value="3" >Pelanggan</span>
+            <span value="4" >Klien</span>
+        </div>
+        <div></div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Nama</p>
+            <div class="cfield">
+                <input type="text" placeholder="Nama" name="nama" />
+                <i class="la la-user"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Tanggal</p>
+            <div class="cfield">
+                <input type="date" id="tgllahir" placeholder="Tanggal lahir" name="tanggallahir" />
+                <i class="la la-la la-calendar-o"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Foto KTP</p>       
+            <div class="cfield">
+                <input type="file" id="ktp" placeholder="Foto KTP" name="fotoktp" />
+                <i class="la la-photo"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Nomor KTP / NIK</p>
+            <div class="cfield">
+                <input type="number" placeholder="No. KTP / NIK" name="nik" />
+                <i class="la la-credit-card"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%; ">Alamat</p>
+            <div class="cfield">
+                <textarea placeholder="Alamat" type="text" name="alamat" style="background-color: #fff"></textarea>
+                <i class="la la-map-marker" style="float: right;"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Jenis Kelamin</p>
+            <div class="dropdown-field">
+                <select data-placeholder="Jenis Kelamin" name="jeniskelamin" class="chosen">
+                    <option>Laki - laki</option>
+                    <option>Perempuan</option>
+                </select>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Foto Pribadi</p>
+            <div class="cfield">
+                <input type="file" id="pribadi" placeholder="Foto Pribadi" name="fotopribadi" />
+                <i class="la la-photo"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Email</p>
+            <div class="cfield">
+                <input type="text" placeholder="Email" name="email" />
+                <i class="la la-envelope-o"></i>
+            </div>
+            <p style="font-size: 14px; float: left; margin: 1%;">Password</p>
+            <div class="cfield">
+                <input type="password" placeholder="********" name="password" />
+                <i class="la la-key"></i>
+            </div>
+            <button type="submit">Daftar</button>
+        <div class="extra-login">
+            <span>atau daftar dengan</span>
+            <div class="login-social">
+            	<a class="google-login" href="#" title="google"><i class="fa fa-google"></i></a>
+                <a class="fb-login" href="#" title="facebook"><i class="fa fa-facebook"></i></a>
+                <a class="tw-login" href="#" title="twitter"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </form>
 	</div>
 </div><!-- SIGNUP POPUP -->
 
