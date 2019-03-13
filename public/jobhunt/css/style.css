@@ -271,6 +271,8 @@ i{font-style:italic}
 :-moz-placeholder{opacity:1}
 :-ms-input-placeholder{opacity:1}
 input[type="text"],
+input[type="number"],
+input[type="date"],
 input[type="password"],
 input[type="email"], textarea {
     background: #e4e4e4 none repeat scroll 0 0;
@@ -285,7 +287,8 @@ input[type="email"], textarea {
 textarea{
     max-width:100%;
     min-height:200px;
-    padding: 19px 28px;
+    padding: 15px 15px;
+    font-size: 12px;
 }
 strong{font-weight:800}
 button{
@@ -922,6 +925,7 @@ label::after {
     right: 20px;
     font-size: 19px;
 }
+
 .remember-label {
     float: left;
     margin: 0;
@@ -1012,6 +1016,10 @@ label::after {
 .login-social a.tw-login {
     color: #1da1f2;
     border-color: #1da1f2;
+}
+.login-social a.google-login {
+    color: #fb236a;
+    border-color: #fb236a;
 }
 
 .login-social a {
@@ -10640,6 +10648,13 @@ terms {
     border-color: #3b5998;  
     color: #ffffff;
 }
+
+.login-social a.google-login:hover{
+    background: #fb236a;
+    border-color: #fb236a;
+    color: #ffffff;
+}
+
 
 .job-search form button:hover{
      background: #fb236a;
